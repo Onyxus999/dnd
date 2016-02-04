@@ -21,21 +21,13 @@
 
 	<speed value = "25"/>
 
-	<ability name = "Darkvision">
-		<desc>Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</desc>
-	</ability>
+	<ability name = "Darkvision" desc = "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."/>
 
-	<ability name = "Dwarfish Resillience">
-		<desc>You have advantage on saving throws against poison, and you have resistance against poison damage.</desc>
-	</ability>
+	<ability name = "Dwarfish Resillience" desc = "You have advantage on saving throws against poison, and you have resistance against poison damage." />
 
-	<ability name = "Dwarfish Combat Training">
-		<desc>You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer.</desc>
-	</ability>
+	<ability name = "Dwarfish Combat Training" desc = "You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer."/>
 
-	<ability name = "Stonecutting">
-		<desc>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</desc>
-	</ability>
+	<ability name = "Stonecutting" desc = "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."/>
 
 	<ability name = "Tool Proficiency">
 		<desc>You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.</desc>
@@ -47,9 +39,7 @@
 			<wis value = "1"/>
 		</abs>
 
-		<ability name = "Dwarfish Toughness">
-			<desc>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</desc>
-		</ability>
+		<ability name = "Dwarfish Toughness" desc = "Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."/>
 
 
 	</subrace>
@@ -57,11 +47,10 @@
 	<subrace name = "Mountain">
 
 		<abs>
+			<str value = "1"/>
 		</abs>
 
-		<ability name = "Dwarfish Armor Training">
-			<desc>You have proficiency with light and medium armor.</desc>
-		</ability>
+		<ability name = "Dwarfish Armor Training" desc = "You have proficiency with light and medium armor."/>
 
 	</subrace>
 
@@ -81,38 +70,153 @@
 
 <class name = "Fighter">
 
+	<level_one>
+	</level_one>
 
+	<level_two>
+	</level_two>
+
+	<level_three>
+	</level_three>
+
+	<level_four>
+	</level_four>
+
+	<level_five>
+	</level_five>
+	
+	<level_six>
+	</level_six>
+
+	<level_seven>
+	</level_seven>
+
+	<level_eight>
+	</level_eight>
+
+	<level_nine>
+	</level_nine>
+
+	<level_ten>
+	</level_ten>
+
+	<level_ten>
+	</level_ten>
+
+	<level_ten>
+	</level_ten>
+
+	<level_eleven>
+	</level_eleven>
+
+	<level_twelve>
+	</level_twelve>
+
+	<level_thirteen>
+	</level_thirteen>
+
+	<level_fourteen>
+	</level_fourteen>
+
+	<level_fifteen>
+	</level_fifteen>
+
+	<level_sixteen>
+	</level_sixteen>
+
+	<level_seventeen>
+	</level_seventeen>
+
+	<level_eighteen>
+	</level_eighteen>
+
+	<level_nineteen>
+	</level_nineteen>
+
+	<level_twenty>
+	</level_twenty>
 
 
 </class>
 
 <class name = "Wizard">
+
+	<level_one>
+	</level_one>
+
+	<level_two>
+	</level_two>
+
+	<level_three>
+	</level_three>
+
+	<level_four>
+	</level_four>
+
+	<level_five>
+	</level_five>
+	
+	<level_six>
+	</level_six>
+
+	<level_seven>
+	</level_seven>
+
+	<level_eight>
+	</level_eight>
+
+	<level_nine>
+	</level_nine>
+
+	<level_ten>
+	</level_ten>
+
+	<level_ten>
+	</level_ten>
+
+	<level_ten>
+	</level_ten>
+
+	<level_eleven>
+	</level_eleven>
+
+	<level_twelve>
+	</level_twelve>
+
+	<level_thirteen>
+	</level_thirteen>
+
+	<level_fourteen>
+	</level_fourteen>
+
+	<level_fifteen>
+	</level_fifteen>
+
+	<level_sixteen>
+	</level_sixteen>
+
+	<level_seventeen>
+	</level_seventeen>
+
+	<level_eighteen>
+	</level_eighteen>
+
+	<level_nineteen>
+	</level_nineteen>
+
+	<level_twenty>
+	</level_twenty>
+
+
+
 </class>
 
 <class name = "Cleric">
 
 	<level_one>
-		<feature name = "Spellcasting">
-			<desc></desc>
-		</feature>
-
-		<feature name = "Devine Domain">
-			<options>
-				<option>
-					<feature name = "">
-					</feature>
-				</option>
-				
-				<option>
-				</option>
-
-			</options>
-		</feature>
 	</level_one>
 
 	<level_two>
-		<feature name = "Channel Devinity (1/rest)">
-		</feature>
 	</level_two>
 
 	<level_three>
@@ -179,6 +283,75 @@
 </class>
 
 <class name = "Rogue">
+
+	<level_one>
+	</level_one>
+
+	<level_two>
+	</level_two>
+
+	<level_three>
+	</level_three>
+
+	<level_four>
+	</level_four>
+
+	<level_five>
+	</level_five>
+	
+	<level_six>
+	</level_six>
+
+	<level_seven>
+	</level_seven>
+
+	<level_eight>
+	</level_eight>
+
+	<level_nine>
+	</level_nine>
+
+	<level_ten>
+	</level_ten>
+
+	<level_ten>
+	</level_ten>
+
+	<level_ten>
+	</level_ten>
+
+	<level_eleven>
+	</level_eleven>
+
+	<level_twelve>
+	</level_twelve>
+
+	<level_thirteen>
+	</level_thirteen>
+
+	<level_fourteen>
+	</level_fourteen>
+
+	<level_fifteen>
+	</level_fifteen>
+
+	<level_sixteen>
+	</level_sixteen>
+
+	<level_seventeen>
+	</level_seventeen>
+
+	<level_eighteen>
+	</level_eighteen>
+
+	<level_nineteen>
+	</level_nineteen>
+
+	<level_twenty>
+	</level_twenty>
+
+
+
 </class>
 
 <!-- Background Data -->

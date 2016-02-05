@@ -1,15 +1,6 @@
 import xml.etree.ElementTree as ET
 import random
 
-def parse_race(race, local_abs, local_abilities):
-		
-
-def parse_job(job):
-	pass
-
-def parse_background(background):
-	pass
-
 # Import the Race, Class, and Background data
 tree = ET.parse('data.xml')
 root = tree.getroot()
@@ -29,7 +20,12 @@ for child in root:
     elif child.tag == 'background':
         all_backgrounds.append(child)
 
-race = all_races[random.randrange(0, len(all_races))]
+## Eventual implimentation
+#race = all_races[random.randrange(0, len(all_races))]
+
+# FIXME
+race = all_races[0]
+
 job = all_jobs[random.randrange(0, len(all_jobs))]
 background = all_backgrounds[random.randrange(0, len(all_backgrounds))]
 
@@ -37,7 +33,11 @@ ability_scores = {'str' : random.randrange(3,19), 'dex' : random.randrange(3,19)
 racial_abilities = []
 job_features = []
 background_features = []
-
+age = "0"
+alignment = ""
+size = ""
+speed = "0"
+abilities = []
 
 # Race Parsing
 for child in race:
@@ -69,10 +69,10 @@ for child in race:
 				pass
 		if civil == "":
 			civilities = ["Lawful", "Neutral", "Chaotic"]
-			civil = civilities[random.randrange(0, len(civilities)]
+			civil = civilities[random.randrange(0, len(civilities))]
 		if moral == "":
 			moralities = ["Good", "Neutral", "Evil"]
-			moral = moralities[random.randrange(0, len(moralities)]
+			moral = moralities[random.randrange(0, len(moralities))]
 		if civil == "Neutral" and moral == "Neutral":
 			civil = "True"
 		alignment = civil + " " + moral
@@ -87,8 +87,12 @@ for child in race:
                 abilities.append(child.attrib['name'] + ":\n\t" + child.attrib['desc'])
                 
 
-print "Name: " + "\tAge: " + age
+print "Name: " + "\tAge: " + str(age)
 print "Race: " + race.attrib['name'] + "\tClass: " + job.attrib['name']
 print "Background: " + background.attrib['name'] + "\tAlignment: " + alignment
-print "Size: " + size + "\tSpeed: " + speed
+print "Size: " + size + "\tSpeed: " + str(speed)
 print "\nAbility Scores:\n\tSTR: " + str(ability_scores['str']) + "\n\tDEX: " + str(ability_scores['dex']) + "\n\tCON: " + str(ability_scores['con']) + "\n\tINT: " + str(ability_scores['int']) + "\n\tWIS: " + str(ability_scores['wis']) + "\n\tCHA: " + str(ability_scores['cha'])
+print "--------- --------- ---------"
+print "Abilities:"
+for ability in abilities:
+    print "\n" +  ability

@@ -30,9 +30,7 @@
 
 	<ability name = "Stonecutting" desc = "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."/>
 
-	<ability name = "Tool Proficiency">
-		<desc>You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.</desc>
-	</ability>
+	<ability name = "Tool Proficiency" desc = "You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools."/>
 
 	<subrace name = "Hill">
 

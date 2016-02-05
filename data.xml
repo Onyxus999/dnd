@@ -15,6 +15,7 @@
 	</age>
 
 	<alignment>
+		<civil value = "Lawful"/>
 	</alignment>
 
 	<size value = "Medium"/>

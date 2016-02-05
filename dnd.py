@@ -1,15 +1,6 @@
 import xml.etree.ElementTree as ET
 import random
 
-def parse_race(race, local_abs, local_abilities):
-		
-
-def parse_job(job):
-	pass
-
-def parse_background(background):
-	pass
-
 # Import the Race, Class, and Background data
 tree = ET.parse('data.xml')
 root = tree.getroot()
@@ -78,17 +69,17 @@ for child in race:
 		alignment = civil + " " + moral
 
 	elif child.tag == 'size':
-		size = child.attrib['value']
+        	size = child.attrib['value']
 
 	elif child.tag == 'speed':
-		speed = child.attrib['value']
+                speed = child.attrib['value']
 
 	elif child.tag == 'ability':
-		abilities = {}
-		for ability in child:
+                abilities.append(child.attrib['name'] + ":\n\t" + child.attrib['desc'])
+                
 
-
-print "Race: " + race.attrib['name']
-print "Class: " + job.attrib['name']
-print "Background: " + background.attrib['name']
+print "Name: " + "\tAge: " + age
+print "Race: " + race.attrib['name'] + "\tClass: " + job.attrib['name']
+print "Background: " + background.attrib['name'] + "\tAlignment: " + alignment
+print "Size: " + size + "\tSpeed: " + speed
 print "\nAbility Scores:\n\tSTR: " + str(ability_scores['str']) + "\n\tDEX: " + str(ability_scores['dex']) + "\n\tCON: " + str(ability_scores['con']) + "\n\tINT: " + str(ability_scores['int']) + "\n\tWIS: " + str(ability_scores['wis']) + "\n\tCHA: " + str(ability_scores['cha'])
